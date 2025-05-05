@@ -25,11 +25,15 @@ know_your_fan/
 ## Instalação e Execução
 Clone o repositório:
 git clone https://github.com/IgorCalbo/know_your_fan.git
+
 cd know_your_fan
 
 Crie e ative um ambiente virtual (opcional, mas recomendado):
+
 python -m venv venv
+
 source venv/bin/activate  # Para Linux/Mac
+
 venv\Scripts\activate     # Para Windows
 
 Instale as dependências:
