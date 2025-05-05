@@ -26,26 +26,28 @@ know_your_fan/
 ### Clone o repositório:
 git clone https://github.com/IgorCalbo/know_your_fan.git
 
+### Abra o arquivo
 cd know_your_fan
 
-Crie e ative um ambiente virtual (opcional, mas recomendado):
-
+### Crie e ative um ambiente virtual (opcional, mas recomendado):
 python -m venv venv
 
 source venv/bin/activate  # Para Linux/Mac
 
 venv\Scripts\activate     # Para Windows
 
-Instale as dependências:
+### Instale as dependências:
 pip install -r requirements.txt
 
-Execute a aplicação:
+### Execute a aplicação:
 python app.py
 
-Acesse no navegador:
+### Acesse no navegador:
 http://localhost:5000
 
 ## Funcionalidades
 Upload e processamento de dados de fãs.
+
 Visualização de informações através de templates HTML.
+
 Armazenamento de dados utilizando SQLite.
