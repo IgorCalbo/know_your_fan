@@ -23,7 +23,7 @@ know_your_fan/
 └── uploads/ 
 
 ## Instalação e Execução
-Clone o repositório:
+### Clone o repositório:
 git clone https://github.com/IgorCalbo/know_your_fan.git
 
 cd know_your_fan
