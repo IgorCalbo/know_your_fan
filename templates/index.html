@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your Fan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cabecalho">
+            <h1>Know Your Fan</h1>
+            <img src="{{ url_for('static', filename='furia-logo.png') }}" width="35" alt="">
+        </div>
+        <form action="{{ url_for('registrar') }}" method="POST" class="conteudo_formulario"
+            enctype="multipart/form-data">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" maxlength="11">
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <label for="interesses">Interesses:</label>
+            <textarea name="interesses"
+                placeholder="Conte-nos um pouco sobre o que você gosta de fazer no seu tempo livre."></textarea>
+            <label for="eventosOuCompras">Eventos que assistiu/compareceu ou compras relacionadas a E-Sports (no último
+                ano)</label>
+            <textarea name="eventosOuCompras"></textarea>
+            <label for="documento">Upload do seu documento para confirmarmos sua identidade</label>
+            <input type="file" name="documento" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+
+</html>
